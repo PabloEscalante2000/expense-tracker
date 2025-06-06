@@ -1,6 +1,9 @@
 <?php
+
+    $array_category = ["Food","Medicine","Studies","Leisure"];
+
     if(isset($_POST["title"]) && isset($_POST["category"]) && isset($_POST["amount"])){
-        if(trim($_POST["title"]) !== "" && trim($_POST["category"]) !== "" && trim($_POST["amount"]) !== "" && trim($_POST["category"]) !== "none"){
+        if(trim($_POST["title"]) !== "" && trim($_POST["category"]) !== "" && trim($_POST["amount"]) !== "" && trim($_POST["category"]) !== "none" && in_array($_POST["category"],$array_category)){
 
             $id = uniqid();
             $title = $_POST["title"];
@@ -35,6 +38,8 @@
                 "type" => "create",
             ];
         }
+        
+    } else {
         $alerta = [
             "solution" => false,
             "type" => "create",

@@ -1,16 +1,3 @@
 {
-    "expenses": [
-        {
-            "id": "6841e062c0a45",
-            "title": "halls",
-            "category": "Food",
-            "amount": 1
-        },
-        {
-            "id": "6841e0face364",
-            "title": "oh",
-            "category": "Food",
-            "amount": 2
-        }
-    ]
+    "expenses": []
 }

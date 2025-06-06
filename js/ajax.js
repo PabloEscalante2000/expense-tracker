@@ -43,11 +43,12 @@ function rewriteList(){
         cache:"no-cache"
     }
 
-    // añadiéndole a esa nueva lista la funcion de borrado con attachDeleteEvents
+    // añadiéndole a esa nueva lista la funcion de borrado con attachDeleteEvents y la funcion de actualizar openPopUpdate()
     fetch(action,config)
     .then(res => res.text())
     .then(html => lista.innerHTML=html)
     .then(() => attachDeleteEvents()) 
+    .then(() => attachUpdateEvents())
     .catch(err => console.log(err))
 }
 
@@ -85,4 +86,18 @@ function attachDeleteEvents() {
     }
 }
 
+function attachUpdateEvents() {
+    const botones = document.querySelectorAll(".update-expense")
+    if(botones){
+        botones.forEach(boton => {
+            if(boton){
+                boton.addEventListener("click",function(e){
+                    openPopUpdate()
+                })
+            }
+        })
+    }
+}
+
 attachDeleteEvents()
+attachUpdateEvents()

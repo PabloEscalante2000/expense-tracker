@@ -15,4 +15,5 @@
         </div>
     </main>
         <?php require_once(__DIR__."/../content/pop-add.php") ?>
+        <?php require_once(__DIR__."/../content/pop-update.php") ?>
 </body>

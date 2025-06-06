@@ -1,3 +1,22 @@
 {
-    "expenses": []
+    "expenses": [
+        {
+            "id": "68432abd179d9",
+            "title": "pepe",
+            "category": "Leisure",
+            "amount": 20
+        },
+        {
+            "id": "68432ac96b3ed",
+            "title": "roro",
+            "category": "Medicine",
+            "amount": 50
+        },
+        {
+            "id": "68432f545a310",
+            "title": "asdasd",
+            "category": "Studies",
+            "amount": 20
+        }
+    ]
 }

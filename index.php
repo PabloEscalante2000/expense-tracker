@@ -7,6 +7,6 @@
     <title>Expense tracker</title>
 </head>
  <?php require_once(__DIR__."/pages/index.php"); ?>
- <script src="/expense-tracker/js/button.js"></script>
- <script src="/expense-tracker/js/ajax.js"></script>
+ <script src="./js/button.js"></script>
+ <script src="./js/ajax.js"></script>
 </html>

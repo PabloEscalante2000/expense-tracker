@@ -1,4 +1,4 @@
-<form id="create-form" class="w-full flex justify-center items-center gap-5 flex-col text-lg font-bold" method="post" action="./logic/update-logic.php" >
+<form id="update-form" class="w-full flex justify-center items-center gap-5 flex-col text-lg font-bold" method="post" action="./logic/update-logic.php" >
     <input type="hidden" name="id" value="" />
     <label for="title">Title:</label>
     <input required name="title" type="text" class="border-2 p-1" />

@@ -1,12 +1,6 @@
 {
     "expenses": [
         {
-            "id": "684474da37c86",
-            "title": "prueba120",
-            "category": "Food",
-            "amount": 20
-        },
-        {
             "id": "684481fb0c7b9",
             "title": "triple",
             "category": "Food",
